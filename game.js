@@ -1,5 +1,7 @@
+let boxes = document.getElementsByClassName("box");
 let turn ="X";
 let isGameOver=false;
+let turnCount=0;
 //function to switch turn
 const changeTurn=()=>{
     if(turn==="X")
@@ -8,9 +10,7 @@ const changeTurn=()=>{
 }
 
 const checkWin = ()=>{
-    let boxtexts = document.getElementsByClassName("boxtext");
-    
-    let boxes = document.getElementsByClassName("box");
+    let boxtexts = document.getElementsByClassName("boxtext");    
 let wins=[
     [0,1,2],
     [3,4,5],
@@ -26,33 +26,41 @@ if(boxtexts[e[0]].innerText === boxtexts[e[1]].innerText && boxtexts[e[2]].inner
 {
     document.querySelector('.info').innerText= boxtexts[e[0]].innerHTML + " Won ! ";
     isGameOver=true;
-    box[e[0]].style.backgroundColor="yellow";
-    box[e[1]].style.backgroundColor="yellow";
-    box[e[2]].style.backgroundColor="yellow";
+    var i=0;
+    //animation of winner
+    setInterval(()=>{
+        boxes[e[i]].style.backgroundColor='rgb(174, 181, 249)';
+        i++;
+    },900)
     
 }
+ 
 });
 }
-let boxes = document.getElementsByClassName("box");
 
 Array.from(boxes).forEach(element =>{
 let boxText = element.querySelector(".boxtext");
 element.addEventListener('click',()=>{
-    if(boxText.innerText==='')
+    if(boxText.innerText===''){
     boxText.innerText=turn;
     checkWin();
+    console.log(turnCount);
     if(!isGameOver)
     {
-        turn=changeTurn();       
+        turn=changeTurn();
+        turnCount++;
+        if(turnCount<9){      
         document.querySelector(".info").innerText="Turn for : "+turn;
+        }
+        else
+        document.querySelector(".info").innerText="Draw";
     }
     else turn='';
-})
+}})
 });
 let resetBtn=document.getElementById("reset");
 resetBtn.addEventListener("click",()=>{
     isGameOver=false;
     document.location.reload();
-
 });
 
