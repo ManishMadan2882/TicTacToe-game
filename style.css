@@ -70,12 +70,12 @@ border-bottom: 0;
     margin-left:30px; 
     padding: 7px;
     
-    width: 70px;
+    width: 110px;
     font-size: 1.1rem;
     font-family: 'Varela Round', sans-serif;
-    border: 3px solid rgb(168, 160, 242);
-    color:rgb(168, 160, 242) ;
-    background-color: rgb(23, 26, 57);
+    /* border: 3px solid rgb(168, 160, 242); */
+    color:rgb(23, 26, 57) ;
+    background-color:  rgb(168, 160, 242);
     border-radius: 10px;
     cursor:pointer;
     font-weight: bold;
@@ -88,14 +88,13 @@ border:3px solid rgb(113, 101, 223);
 .info{
     font-family: 'Varela Round', sans-serif;
     font-size: 1.5rem ; 
-    color: beige;
+    color: lavender;
     font-weight: bold;
     padding: 3px 13px;
     background-color: rgb(112, 70, 112);
     text-align: center;
     width: 150px;
     float: left;
-    border-radius: 10px;
 }
 @media screen and (max-width:950px){
     .container{
