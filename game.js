@@ -64,3 +64,14 @@ resetBtn.addEventListener("click",()=>{
     document.location.reload();
 });
 
+ function darkMode() {
+     var element = document.body;
+     var content = document.getElementById("Dark");
+    //  var c=document.getElementById("container")
+     element.className = "dark-mode";
+   content.innerText = "Dark Mode is ON";
+   document.getElementsByClassName("box").style = "border-color : white;";
+   document.body.style.backgroundColor = "black";
+      
+
+  }

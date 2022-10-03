@@ -49,6 +49,8 @@ nav ul{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border-color:#39FF14;
+    ;
 
 }
 .box:hover{
@@ -105,3 +107,22 @@ border:3px solid rgb(85, 80, 137);
     
     
 }
+ #Dark
+{
+    /* background-color: black;
+    color: white; */
+
+    margin-left:30px; 
+    padding: 7px;
+    
+    width: 120px;
+    font-size: 1.1rem;
+    font-family: 'Varela Round', sans-serif;
+    /* border: 3px solid rgb(168, 160, 242); */
+    color:rgb(23, 26, 57) ;
+    background-color:  rgb(168, 160, 242);
+    border-radius: 10px;
+    cursor:pointer;
+    font-weight: bold;
+        
+} 
