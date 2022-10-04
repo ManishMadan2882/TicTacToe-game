@@ -11,21 +11,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Quantico&family=Space+Mono:wght@700&family=Varela+Round&family=Viga&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-      
-        <ul style="align-items:center;">
-            <li>
-                <div class="gameInfo">
-                    <span class="info">
-                        Turn for : X
-                    </span>
-                    <button id="reset">Play Again</button>
-                     <button id="Dark" onclick="darkMode()">Dark mode</button> 
 
-                </div>
-            </li>
-        </ul>
-    </nav>
+    <nav class="global-nav">
+		<ul class="nav-center">
+			<li class="nav-link nav-left"><button id="Dark" onclick="darkMode()">Dark mode</button><button id="reset">Play Again</button></li>
+			<li class="nav-link"><span class="info">
+                Turn for : X
+            </span></li>
+		</ul>
+	</nav>
     
     <div class="gameContainer">
         <div class="container">
