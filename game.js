@@ -70,7 +70,11 @@ resetBtn.addEventListener("click",()=>{
     //  var c=document.getElementById("container")
      element.className = "dark-mode";
    content.innerText = "Dark Mode is ON";
-   document.getElementsByClassName("box").style = "border-color : white;";
+     document.getElementsByClassName("boxtext").style.color = "white";
+   document.getElementsByClassName("borderLeft0").style.borderColor = "white";
+     document.getElementsByClassName("borderRight0").style.borderColor = "white";
+     document.getElementsByClassName("borderTop0").style.borderColor = "white";
+     document.getElementsByClassName("borderBottom0").style.borderColor = "white";
    document.body.style.backgroundColor = "black";
       
 
