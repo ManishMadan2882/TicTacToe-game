@@ -2,6 +2,8 @@ let boxes = document.getElementsByClassName("box");
 let turn ="X";
 let isGameOver=false;
 let turnCount=0;
+let isDarkMode = false;
+
 //function to switch turn
 const changeTurn=()=>{
     if(turn==="X")
@@ -64,12 +66,15 @@ resetBtn.addEventListener("click",()=>{
     document.location.reload();
 });
 
- function darkMode() {
-     var element = document.body;
-     var content = document.getElementById("Dark");
-     element.className = "dark-mode";
-   content.innerText = "Dark Mode is ON";
-   document.body.style.backgroundColor = "black";
-      
+ function toggleDarkMode() {
+    isDarkMode = !isDarkMode
 
+    if (isDarkMode) {
+        document.body.className = "dark-mode";
+        document.getElementById("toggleDarkModeBtn").innerText = "Light mode";
+    }
+    else {
+        document.body.className = "light-mode";
+        document.getElementById("toggleDarkModeBtn").innerText = "Dark mode";
+    }
   }
