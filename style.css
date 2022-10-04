@@ -108,18 +108,14 @@ border:3px solid rgb(85, 80, 137);
     
     
 }
- #Dark
+ #toggleDarkModeBtn
 {
-    /* background-color: black;
-    color: white; */
-
     margin-left:30px; 
     padding: 7px;
     
     width: 120px;
     font-size: 1.1rem;
     font-family: 'Varela Round', sans-serif;
-    /* border: 3px solid rgb(168, 160, 242); */
     color:rgb(23, 26, 57) ;
     background-color:  rgb(168, 160, 242);
     border-radius: 10px;
@@ -127,3 +123,17 @@ border:3px solid rgb(85, 80, 137);
     font-weight: bold;
         
 } 
+
+.light-mode {
+    background-color: white;
+}
+.light-mode span.boxtext {
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+}
+.dark-mode span.boxtext {
+    color: white;
+}
