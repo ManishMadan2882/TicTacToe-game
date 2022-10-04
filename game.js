@@ -4,6 +4,12 @@ let isGameOver=false;
 let turnCount=0;
 let isDarkMode = false;
 
+// on page load
+(function() {
+    isDarkMode = !(localStorage.getItem("isDarkMode") === 'true');
+    toggleDarkMode();
+  })();
+
 //function to switch turn
 const changeTurn=()=>{
     if(turn==="X")
@@ -68,6 +74,7 @@ resetBtn.addEventListener("click",()=>{
 
  function toggleDarkMode() {
     isDarkMode = !isDarkMode
+    localStorage.setItem("isDarkMode", isDarkMode);
 
     if (isDarkMode) {
         document.body.className = "dark-mode";
