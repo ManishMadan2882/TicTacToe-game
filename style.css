@@ -2,28 +2,29 @@
     margin: 0px;
     padding:0px;
 }
-.gameInfo{
-   display: inline-block;
-   width: 360px;
-   padding: 13px 10px;
 
-}
-nav{
-    display: flex;
-    color:skyblue;
+.global-nav {
+	font-size: 13px;
+	text-align: center;
+	list-style-type: none;
+	color:skyblue;
     height: 60px; 
     background-size: contain;  
-    
     background-color: rgb(12, 15, 45);
-   
+	border-bottom: 1px solid #235990;
+    position: relative;
 }
-nav ul{
-     list-style-type: none;
-    display: inline;
-     
-    background-color: rgb(12, 15, 45);
-
-     
+.global-nav ul {
+    padding: 10px 0;
+    margin: 0;
+}
+.global-nav li {
+	display: inline-block;
+}
+.nav-left {
+	position: absolute;
+    left: 10px;
+    top: 10px;
 }
 
 .gameContainer{
