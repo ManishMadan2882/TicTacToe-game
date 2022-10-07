@@ -51,7 +51,6 @@
     align-items: center;
     cursor: pointer;
     border-color:#39FF14;
-    ;
 
 }
 .box:hover{
@@ -104,6 +103,22 @@ border:3px solid rgb(85, 80, 137);
         font-weight: bold;
         grid-template-columns: repeat(3,24vw);
         grid-template-rows: repeat(3,24vw);
+    }
+    
+
+}
+@media screen and (min-width:600px){
+.nav-right{
+    position: absolute;
+    right: auto;
+    top: 10px;
+}
+}
+
+@media screen and (max-width:600px){
+    .nav-right{
+        margin-top: 90px;
+       
     }
     
     
