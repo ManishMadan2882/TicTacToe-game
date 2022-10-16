@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,24 @@
     <title>Tic Tac Toe | X/O</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quantico&family=Space+Mono:wght@700&family=Varela+Round&family=Viga&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quantico&family=Space+Mono:wght@700&family=Varela+Round&family=Viga&display=swap"
+        rel="stylesheet">
 </head>
+
 <body class="light-mode">
 
     <nav class="global-nav">
-		<ul class="nav-center">
-			<li class="nav-link nav-left"><button id="toggleDarkModeBtn" onclick="toggleDarkMode()">Dark mode</button><button id="reset">Play Again</button></li>
-			<li class="nav-link nav-right"><span class="info">
-                Turn for : X
-            </span></li>
-		</ul>
-	</nav>
-    
+        <ul class="nav-center">
+            <li class="nav-link nav-left"><button id="toggleDarkModeBtn" onclick="toggleDarkMode()">Dark
+                    mode</button><button id="reset">Play Again</button></li>
+            <li class="nav-link nav-right"><span class="info">
+                    Turn for : X
+                </span></li>
+        </ul>
+    </nav>
+
     <div class="gameContainer">
         <div class="container">
             <div class="box borderLeft0 borderTop0"><span class="boxtext"></span></div>
@@ -33,10 +38,11 @@
             <div class="box borderBottom0"><span class="boxtext"></span></div>
             <div class="box borderBottom0 borderRight0"><span class="boxtext"></span></div>
         </div>
-        
+
     </div>
     <div id="result"></div>
     <script src="./confetti.js"></script>
     <script src="game.js"></script>
 </body>
+
 </html>
