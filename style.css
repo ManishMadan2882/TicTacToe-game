@@ -49,10 +49,10 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-color: #39ff14;
+  border-color: #FF770F;
 }
 .box:hover {
-  background-color: rgb(199, 241, 203);
+  background-color: #FED8B1;
 }
 .borderRight0 {
   border-right: 0;
@@ -69,7 +69,6 @@
 #reset {
   margin-left: 30px;
   padding: 7px;
-
   width: 120px;
   font-size: 1.1rem;
   font-family: "Varela Round", sans-serif;
@@ -130,7 +129,7 @@
 }
 
 .light-mode {
-  background-color: white;
+  background-color: #E0FFFF;
 }
 .light-mode span.boxtext {
   color: black;
